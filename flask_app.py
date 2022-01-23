@@ -11,11 +11,11 @@ from flask_migrate import Migrate
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
-    username="dhowe",
-    password="elvinsql",
-    hostname="dhowe.mysql.pythonanywhere-services.com",
-    databasename="dhowe$comments",
+SQLALCHEMY_DATABASE_URI = "
+    username="
+    password="
+    hostname=",
+    databasename="
 )
 app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
 app.config["SQLALCHEMY_POOL_RECYCLE"] = 299
@@ -24,7 +24,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-app.secret_key = "111213141516"
+app.secret_key = "
 login_manager = LoginManager()
 login_manager.init_app(app)
 
