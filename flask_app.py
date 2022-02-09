@@ -1,6 +1,6 @@
 
-# Message Board App
-# trying to move to the hub and back
+# Home_Page - flask home page for personal use 2017
+# has login, out comments.
 from datetime import datetime
 from flask import Flask, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
